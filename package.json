@@ -1,0 +1,22 @@
+{
+  "name": "legal-matter-statement-export",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/legal_statement_server.ts",
+    "export:sample": "tsx src/export_sample_statement.ts",
+    "test": "tsx --test test/statement_workflow.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.15.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.8.0"
+  }
+}

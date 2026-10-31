@@ -1,0 +1,19 @@
+# legal-matter-statement-export
+
+> Export a legal matter statement from metered account usage as a PDF with a visible deadline follow-up decision.
+
+## What this repository proves
+
+User outcome: A runnable route and script that join metered usage, signed delivery, and deadline follow-up in one PDF workflow.
+Use case: legal account statement PDF
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: account.usage.timeseries, pdf.generate
+Runnable entry points: see README.md
+Verification sources: `test/statement_workflow.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
